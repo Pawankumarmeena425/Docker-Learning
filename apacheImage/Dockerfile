@@ -8,7 +8,7 @@ RUN apt update -y && apt install -y apache2
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Step 4: Expose port 80
-EXPOSE 8000
+EXPOSE 80
 
 # Step 5: Set the default command to run Apache in the foreground
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
